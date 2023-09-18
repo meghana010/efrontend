@@ -1,0 +1,49 @@
+import React from "react"
+import "./style.css"
+
+const Footer = () => {
+  return (
+    <>
+      <footer>
+        <div className='container grid2 myflex'>
+          <div className='box'>
+            <h1>EcoStyleShop</h1>
+            <p>The fashion industry is one of the most polluting industries globally. Sustainable fashion brands prioritize eco-friendly practices, such as using organic and sustainable materials, reducing waste, and minimizing energy consumption.</p>
+            
+          </div>
+
+          <div className='box'>
+            <h2>About Us</h2>
+            <ul>
+              <li>Careers</li>
+              <li>Our Stores</li>
+              <li>Our Cares</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div className='box'>
+            <h2>Customer Care</h2>
+            <ul>
+              <li>Help Center </li>
+              <li>How to Buy </li>
+              <li>Track Your Order </li>
+              <li>Corporate & Bulk Purchasing </li>
+              <li>Returns & Refunds </li>
+            </ul>
+          </div>
+          <div className='box'>
+            <h2>Contact Us</h2>
+            <ul>
+              <li>Hyderabad </li>
+              <li>Email: eco@gmail.com</li>
+              <li>Phone: +91998763426</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </>
+  )
+}
+
+export default Footer

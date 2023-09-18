@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.purchase {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin:0px;
+    padding:15px;
+    
+}
+
+.myitems{
+    margin:50px;
+    border:solid white 20px;
+    background-color: white;
+    height:430px;
+    width:240px;
+}
+.whole{
+   background-color:rgb(241, 248, 248);
+}
+.myimg{
+    height:300px;
+    width:200px;
+}
+
+.mrg{
+    border:solid black 1px;
+    box-shadow: 2px 2px 2px;
+}
+.mrg2{
+   box-sizing:border-box;
+  margin-top:130px;
+  margin-bottom:50px;
+  
+    text-align:center;
+    padding: 50px;
+    height:100px;
+    width:auto;
+    border:solid black 1px;
+    background-color: white;
+    box-shadow: 2px 2px 6px;
+    
+
+}
