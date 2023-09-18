@@ -13,7 +13,7 @@ import { useAuth } from "../../components/MainPage/AuthContext";
   useEffect(() => {
     if (loggedInEmail) {
     axios
-      .get(`http://localhost:5000/cart?email=${loggedInEmail}`)
+      .get(`https://eco-gtpf.onrender.com/cart?email=${loggedInEmail}`)
       .then((response) => {
         if (Array.isArray(response.data)) {
           //const userCartItems = response.data.filter((item) => item.email === loggedInEmail);
@@ -35,7 +35,7 @@ import { useAuth } from "../../components/MainPage/AuthContext";
 
   const handlePurchase = () => {
     // Send a request to store the cart items as purchase history
-    axios.post(`http://localhost:5000/purchase-history?email=${loggedInEmail}`, CartItem).then(() => {
+    axios.post(`https://eco-gtpf.onrender.com/purchase-history?email=${loggedInEmail}`, CartItem).then(() => {
       setIsPurchased(true);
       
     });
