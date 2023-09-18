@@ -1,4 +1,4 @@
-const Adata = {
+  const Adata = {
     allItems: [
        
           {
@@ -272,7 +272,7 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/pact/womens T shirt/1.jpg",
+        cover: "./images/pact/womens t shirt/3.jpg",
         price:10,
       },
       {
@@ -296,7 +296,7 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/pact/womens T shirt/1.jpg",
+        cover: "./images/pact/womens t shirt/3.jpg",
         price:10,
       },
       {
@@ -328,14 +328,14 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/pact/womens T shirt/2.jpg",
+        cover: "./images/pact/womens t shirt/3.jpg",
         price:10,
       },{
         id: 26,
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/pact/womens T shirt/3.jpg",
+        cover: "./images/pact/womens t shirt/5.jpg",
         price:10,
       },
       {
@@ -429,6 +429,4 @@ const Adata = {
     ]
   }
   export default Adata
-  
-    
   
