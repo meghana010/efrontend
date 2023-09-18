@@ -18,7 +18,7 @@ function Login({ setCartItem, cartItem,purchaseHistory,setPurchaseHistory }) {
     // Fetch cart data
     if (loggedInEmail) {
     axios
-      .get(`http://localhost:5000/cart?email=${loggedInEmail}`)
+      .get(`https://eco-gtpf.onrender.com/cart?email=${loggedInEmail}`)
       .then((response) => {
         if (Array.isArray(response.data)) {
           setCartItem(response.data);
@@ -30,7 +30,7 @@ function Login({ setCartItem, cartItem,purchaseHistory,setPurchaseHistory }) {
 
     // Fetch purchase history
     axios
-      .get(`http://localhost:5000/purchase-history?email=${loggedInEmail}`)
+      .get(`https://eco-gtpf.onrender.com/purchase-history?email=${loggedInEmail}`)
       .then((response) => {
         setPurchaseHistory(response.data);
       })
@@ -44,7 +44,7 @@ function Login({ setCartItem, cartItem,purchaseHistory,setPurchaseHistory }) {
 
   try {
 
-   const response = await axios.post("http://localhost:5000/", {
+   const response = await axios.post("https://eco-gtpf.onrender.com/", {
 
     email,
 
@@ -81,7 +81,7 @@ function Login({ setCartItem, cartItem,purchaseHistory,setPurchaseHistory }) {
 
    // Send a logout request to the server to clear the session or token
 
-   await axios.post("http://localhost:5000/logout");
+   await axios.post("https://eco-gtpf.onrender.com/logout");
 
    setLoggedInEmail(""); 
    setCartItem([]);
