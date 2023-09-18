@@ -33,7 +33,7 @@ function App() {
   
     if (productExist.quantity === 1) {
     axios
-        .post(`http://localhost:5000/remove-from-cart/`, { productId: product.id, quantity: 1,email: loggedInEmail })
+        .post(`https://eco-gtpf.onrender.com/remove-from-cart/`, { productId: product.id, quantity: 1,email: loggedInEmail })
         .then((response) => {
           if (response.data.success) {
               setCartItem(CartItem.filter((item) => item.id !== product.id));
@@ -45,7 +45,7 @@ function App() {
         });
     } else {
          axios
-        .post(`http://localhost:5000/update-cart-quantity/`, { productId: product.id, quantity:product.quantity -1,email: loggedInEmail })
+        .post(`https://eco-gtpf.onrender.com/update-cart-quantity/`, { productId: product.id, quantity:product.quantity -1,email: loggedInEmail })
         .then((response) => {
           if (response.data.success) {
                  setCartItem(
@@ -70,7 +70,7 @@ function App() {
     if (productExist) {
         const updatedCartItem = { ...productExist, quantity: productExist.quantity + quantityToAdd };
       axios
-        .post(`http://localhost:5000/update-cart-item/`, { item: updatedCartItem ,email: loggedInEmail})
+        .post(`https://eco-gtpf.onrender.com/update-cart-item/`, { item: updatedCartItem ,email: loggedInEmail})
         .then((response) => {
           // Handle the response if needed
           if (response.data.success) {
@@ -86,7 +86,7 @@ function App() {
       const itemToAdd = { ...product, quantity: quantityToAdd };
   
         axios
-        .post(`http://localhost:5000/add-to-cart/`, { item: itemToAdd,email: loggedInEmail })
+        .post(`https://eco-gtpf.onrender.com/add-to-cart/`, { item: itemToAdd,email: loggedInEmail })
         .then((response) => {
                if (response.data.success) {
                setCartItem([...CartItem, itemToAdd]);
