@@ -56,7 +56,7 @@ function Login({ setCartItem, cartItem,purchaseHistory,setPurchaseHistory }) {
 
     setLoggedInEmail(email); // Set the logged-in user's email
 
-    history("/home", { state: { id: email } });
+    history("/", { state: { id: email } });
     
 
    } else if (response.data === "notexist") {
