@@ -111,6 +111,7 @@ function App() {
     <Route path="/purchase-history" element={<PurchaseHistory purchaseHistory={purchaseHistory} setPurchaseHistory={setPurchaseHistory}/>}/>
     <Route path="/contact" element={<Contact/>} />
     <Route path="/forgot-password" element={<ForgotPassword />} />
+  <Route path="/dashboard" element={<Dashboard purchaseHistory={purchaseHistory} setPurchaseHistory={setPurchaseHistory}/>}/>
     <Route path="/cart" element={<Cart CartItem={CartItem} setCartItem={setCartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
   </Routes>
   <Footer />
