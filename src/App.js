@@ -17,7 +17,7 @@ import Contact from "./components/MainPage/Contact"
 import ForgotPassword from "./components/MainPage/ForgotPassword"
 import { useAuth } from "./components/MainPage/AuthContext";
 import PurchaseHistory from "./components/MainPage/PurchaseHistory"
-
+import Dashboard from "./components/MainPage/Dashboard"
 function App() {
   //const location=useLocation();
   const history = useNavigate();
