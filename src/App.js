@@ -114,7 +114,7 @@ function App() {
   <Route path="/dashboard" element={<Dashboard purchaseHistory={purchaseHistory} setPurchaseHistory={setPurchaseHistory}/>}/>
     <Route path="/cart" element={<Cart CartItem={CartItem} setCartItem={setCartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
   </Routes>
-  <Footer />
+  <Footer/>
     
     </>
   )
